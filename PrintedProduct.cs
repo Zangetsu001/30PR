@@ -26,7 +26,7 @@ namespace ConsoleApp10
             }
         }
         public abstract double Cost();
-
+        public abstract void Print();
     
     }
 }

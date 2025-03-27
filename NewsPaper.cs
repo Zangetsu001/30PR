@@ -26,5 +26,9 @@ namespace ConsoleApp10
             return Circulation * Numpages * Costperpage;
         }
 
+        public override void Print()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

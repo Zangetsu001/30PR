@@ -27,5 +27,23 @@ namespace ConsoleApp10
         {
             return Circulation * Price;
         }
+        public static Magazine Enter()
+        {
+            Console.Clear();
+            Console.Write("Введите название журнала: ");
+            string name = Console.ReadLine();
+            Console.Write("Введите тираж журнала: ");
+            int circulation = int.Parse(Console.ReadLine());
+            Console.Write("Введите цену журнала: ");
+            double price = double.Parse(Console.ReadLine());
+            return new Magazine(name, circulation, price);
+
+
+        }
+        
+        public override void Print()
+        {
+            Console.WriteLine($"Печатная продукция - журнал {Name}\nТираж - {circulation} экз. \tЦена 1-го экземпляра - {price} руб.");
+        }
     }
 }
